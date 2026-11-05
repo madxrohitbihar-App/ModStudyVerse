@@ -3,13 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=https://madxrohitbihar-app.github.io/Dost/">
-    <title>Redirecting...</title>
-    <script type="text/javascript">
-        window.location.href = "https://madxrohitbihar-app.github.io/Dost/";
-    </script>
+    <title>App Update Available</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .update-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 16px;
+            padding: 24px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+        .update-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #00f2fe, #4facfe);
+        }
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            background: rgba(79, 172, 254, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px auto;
+            border: 1px solid rgba(79, 172, 254, 0.3);
+        }
+        .icon-box svg {
+            width: 30px;
+            height: 30px;
+            fill: #4facfe;
+        }
+        h2 {
+            color: #ffffff;
+            font-size: 22px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(46, 160, 67, 0.15);
+            color: #3fb950;
+            border: 1px solid rgba(46, 160, 67, 0.4);
+            font-size: 12px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+        p {
+            font-size: 14px;
+            color: #8b949e;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+        .btn-update {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+            color: #000;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
+        }
+        .btn-update:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(79, 172, 254, 0.6);
+        }
+    </style>
 </head>
 <body>
-    <p>Loading... Agar page open na ho toh <a href="https://madxrohitbihar-app.github.io/Dost/">yahan click karein</a>.</p>
+
+    <div class="update-card">
+        <div class="icon-box">
+            <svg viewBox="0 0 24 24">
+                <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"/>
+            </svg>
+        </div>
+        <span class="badge">New Version Available</span>
+        <h2>App Update Required</h2>
+        <p>Aapke app me naya version update kar diya gaya hai. Behtar speed aur new features ke liye abhi update karein.</p>
+        <a href="Https://t.me/+Iy11394-unM4ZTEx" class="btn-update" target="_blank">
+            <span>Update Now</span>
+            <svg style="width: 18px; height: 18px; fill: #000;" viewBox="0 0 24 24">
+                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+            </svg>
+        </a>
+    </div>
+
 </body>
 </html>
